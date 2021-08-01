@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    position: relative;
+    bottom: 5rem;
+}
+
+img {
+    width: 3rem;
+    height: 6rem;
+}
+
+h4 {
+    position: relative;
+    padding: 10px;
+    color: #54436b;
+}
+
+h5 {
+    padding: 10px;
+    color: #54436b;
+}
+
+h6 {
+    padding: 10px;
+    margin-bottom: 3px;
+    color: #54436b;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 25px 25px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+thead tr,
+th {
+    background-color: #009879;
+    color: aliceblue;
+    text-align: left;
+    padding: 12px 15px;
+}
+
+td {
+    padding: 12px 15px;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.price {
+    text-align: center;
+}
+
+.modal {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    max-width: 65vw;
+    max-height: 75vh;
+    background: #50cb94;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    color: #54436b;
+    bottom: 20rem;
+    left: 10rem;
+}
+
+.modal-info {
+    position: relative;
+    right: 7rem;
+}
+
+.img-placeholder {
+    position: relative;
+    left: 12rem;
+    bottom: 6rem;
+}
+
+.close-modal {
+    position: relative;
+    padding: 10px 30px;
+    font-size: 15px;
+    background-color: #acffad;
+    border: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+    color: #54436b;
+    transition: all 0.5s ease-in-out;
+    bottom: 2rem;
+}
+
+.add-book,
+.read-btn,
+.update-btn,
+.remove-btn,
+.add-book-btn,
+.close-add-book,
+.btn-next,
+.btn-next-container,
+.btn-next-container button,
+.btn-back {
+    font-weight: bold;
+    padding: 0.55rem 1.25rem;
+    border-radius: 1.75rem / 100%;
+    position: relative;
+    overflow: hidden;
+    border: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.add-book {
+    padding: 0.25rem 0.5rem;
+}
+
+.close-add-book {
+    padding: 0.25rem 0.6rem;
+}
+
+.close-modal:hover {
+    background-color: greenyellow;
+    transition: background-color 0.75s ease;
+}
+
+.read-btn:hover {
+    background-color: #5c5cff;
+    transition: background-color 0.75s ease;
+}
+
+.update-btn:hover {
+    background-color: #ffff5c;
+    transition: background-color 0.75s ease;
+}
+
+.remove-btn:hover {
+    background-color: #ff2e2e;
+    transition: background-color 0.75s ease;
+}
+
+.add-book-btn:hover {
+    background-color: lightblue;
+    transition: background-color 0.75s ease;
+}
+
+.add-book:hover,
+.btn-next:hover,
+.btn-next-container button:hover,
+.btn-back:hover {
+    background-color: lightsalmon;
+    transition: background-color 0.75s ease;
+}
+
+.close-add-book:hover {
+    background-color: #ff2e2e;
+    transition: background-color 0.75s ease;
+}
+
+.btn-plus:hover {
+    background-color: lightgrey;
+    transition: background-color 0.75s ease;
+}
+
+.btn-minus:hover {
+    background-color: lightgrey;
+    transition: background-color 0.75s ease;
+}
+
+.input-rating {
+    display: flex;
+    position: relative;
+    bottom: 3rem;
+}
+
+.btn-minus {
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.btn-plus {
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.btn-next {
+    position: relative;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    left: 38vw;
+    bottom: 6.5vh;
+}
+
+.btn-back {
+    position: relative;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    left: 14vw;
+    bottom: 6.5vh;
+}
+
+.btn-next-container {
+    display: flex;
+    text-align: center;
+    left: 27vw;
+}
+
+.form-control {
+    padding-top: 0.5rem;
+    font-weight: bold;
+    background-color: whitesmoke;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+}
+
+.form-control[type="number"]::-webkit-inner-spin-button,
+.form-control[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

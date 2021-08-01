@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+    <section name="new-book">Create New Book <span><button class="add-book" onclick="onAddBtnClick()"> +</button></span>
+        <div class="input-new-book" hidden><input class="book-name" type="text" placeholder="Enter the books name">
+            <input class="book-price" type="text" placeholder="Enter the books price">
+            <button class="add-book-btn" onclick="onAddBook()">Add Book</button>
+            <button class="close-add-book" onclick="onAddBookClose()">X</button>
+        </div>
+
+    </section>
+    <section name="books-container">
+
+    </section>
+    <div class="btn-next-container"></div>
+    <button class="btn-next" onclick="onNextPage('next')">Next</button>
+    <button class="btn-back" onclick="onNextPage('back')">Back</button>
+
+    <div class="modal" hidden>
+        <div class="modal-info">
+            <h4>Title: <span class="title"></span></h4>
+            <h5>Readers Rating: <span class="rating-display"></span></h5>
+            <h6>Price: <span class="price"></span></h6>
+        </div>
+        <span class="img-placeholder"></span>
+        <p></p>
+        <div class="input-rating">
+            <button class="btn-minus" onclick="onRatingClick('minus')">
+                -
+            </button>
+            <div class="form-control">0</div>
+            <button class="btn-plus" onclick="onRatingClick('plus')">
+                +
+            </button>
+        </div>
+        <button class="close-modal" onclick="onCloseModal()">Close</button>
+    </div>
+
+    <script src="js/storage-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-controller.js"></script>
+</body>
+
+</html>
